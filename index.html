@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/icon-head.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="Yedro Logo2.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/Estilos/styles.css">
+  <link rel="stylesheet" href="/Estilos/proyectos.css">
+  <link rel="stylesheet" href="/Estilos/formulario.css">
+  <link rel="stylesheet" href="/Estilos/servicios.css">
+  <link rel="stylesheet" href="/Estilos/modal.css">
+  <link rel="stylesheet" href="/Estilos/estiloModal.css">
+  <link rel="stylesheet" href="/Estilos/container-about.css">
+
+  <!-- Iconos del modal de proyectos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Yedro Mauricio</title>
+</head>
+<body>
+
+  <header class="header-container">
+    <div class="logo">
+      <img id="logo" src="LogoNavbar.png" style="cursor: pointer" width="170px" alt="Logo">
+    </div>
+    <!-- <h1>Tu Nombre</h1>  -->
+    
+    <nav>
+      <ul>
+        <!-- <li><a href="#">Inicio</a></li>-->
+        
+        <li><a href="#servicios">Habilidades</a></li>
+        <li><a href="#portafolio">Proyectos</a></li>
+        <!-- <li><a href="#">Acerca de</a></li> -->
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <script src="/JS/scroll.js"></script>
+    <script src="/JS/header-vanish.js"></script>
+  </header>
+ 
+ 
+  <section class="contenido-info" id="inicio">
+  
+    <img  src="/images/avatar.png" alt="Avatar" class="avatar">
+    
+
+   <div class="info-personal">
+    <h2>Yedro Mauricio</h2>
+   <h3>- Coding & Testing -</h3>
+      <button href="#" class="redesBtn">Contactame</button>
+      <button onclick="descargarPDF()" href="#" class="cvBtn">Descargar CV</button>
+    
+  
+  </div>
+
+
+
+<div class="container-about">
+  <div class="botones">
+  
+    <button class="boton seleccionado" onclick="mostrarSeccion('seccion1')">About</button>
+    <button class="boton" onclick="mostrarSeccion('seccion2')">Soft-Skills</button>
+    <button class="boton" onclick="mostrarSeccion('seccion3')">Studies</button>
+  </div>
+<div class="seccion-about seccion1">
+  <h2>Acerca de mí</h2>
+  <p>
+    ¡Bienvenido a mi Portafolios! soy estudiante y entusiasta Programador, aqui podras encontrar mis Proyectos en los que trabajo, las habilidades que manejo y puedo bindarte para lo que necesites. Puedes contactarte conmigo para charlar!
+  </p>
+</div>
+
+<div class="seccion-about seccion2">
+    <h2>Habilidades Blandas</h2>
+    <li>
+      Soy una persona creativa que busca constantemente nuevas soluciones a los problemas.
+    </li>
+      
+      <li>
+        Tengo buenas capacidades de liderazgo y pienso que el trabajo en equipo es necesario para cualquier entorno.
+      </li>
+  </p>
+</div>
+<div class="seccion-about seccion3">
+    <h2>Estudios</h2>
+        <li>
+          Actualmente cursando la carrera en Licenciatura en Sistemas
+        </li>
+        <li>
+          He realizado distintos cursos para capacitarme con los conocimientos que poseo Actualmente
+        </li>
+  </div>
+
+</div>
+
+</section>
+
+<script src="/JS/container-about.js"  ></script>
+
+  <script>
+    document.getElementById('logo').addEventListener('click', function() {
+      // Usa smooth scroll para un desplazamiento suave
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+  <section class="modal">
+      <div class="modal-conteiner">
+        
+     
+        <a href="#" class="fa-solid fa-rectangle-xmark close-icon"></a>
+        <img class="modal-img" src="/images/social-media-flatline-c7bad.svg" alt="modal-img">
+        <h2 class="modal-title"> Redes Sociales </h2>
+         
+          
+          <button class="boton-modal-red">instagram</button>
+          <button class="boton-modal-red">linkedin</button>
+          <button class="boton-modal-red">GitHub</button>
+          <!-- <p class="modal-parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam adipisci non, omnis exercitationem autem aliquam in provident distinctio amet voluptatum libero pariatur quos vero rem.</p> -->
+           
+          <a href="#" class="modal-cerrar">🠠 Volver</a> 
+        </div>
+  </section>
+
+  <div class="logos-contenido" id="logos-contenido">
+    <!-- Logos -->
+    <div class="logos">
+      <div class="logos-slide">
+        <img class="log1" src="/logos/HTML5_logo_and_wordmark.svg.png" />
+        <img class="log2" src="/logos/CSS-Logo.png" />
+        <img class="log3" src="/logos/JavaScript-logo.png" />
+        <img class="log4" src="/logos/MySQL-logo.png" />
+        <img class="log5" src="/logos/PHP-logo.svg.png" />
+        <img class="log6" src="/logos/git.png" />
+        <img class="log1" src="/logos/HTML5_logo_and_wordmark.svg.png" />
+        <img class="log2" src="/logos/CSS-Logo.png" />
+        <img class="log3" src="/logos/JavaScript-logo.png" />
+        <img class="log4" src="/logos/MySQL-logo.png" />
+        <img class="log5" src="/logos/PHP-logo.svg.png" />
+        <img class="log6" src="/logos/git.png" />
+      </div>
+    </div>
+
+    <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>
+</div>
+
+<div class="color-fondo1" id="servicios">
+
+  
+    <h2 class="sobre-mi2" > Habilidades </h2>
+    <section class="element-aparecer"></section>
+    <table class="tabla-servicios">
+      <tr>
+          <td>
+            <img src="/iconos/availability-svgrepo-com.svg" alt="logo">
+            <h3>Desarrollo Frontend</h3>
+            <p>Landing Pages, Blog Personal, tienda o Negocio. Adaptación a las nececidades requeridas.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet in assumenda maxime? Maiores suscipit voluptatum corporis accusamus? Officia quos at adipisci 
+            </p>
+            <!-- <button class="mas-info">Mas info</button>-->  
+          </td>
+          <td>
+            <img src="/iconos/data-analysis-svgrepo-com.svg" alt="logo2">
+            <h3>Software Tester - QA</h3>
+            <p>Experiencia con documentación, casos de pruebas, detecciones y análisis de fallas en Software y Aplicaciones Web. Manipulación 
+              de distintas Herramientas de Testing para todo tipo de verificaciones, requerimientos y reportes.
+            </p>
+            <!-- <button class="mas-info">Mas info</button>-->  
+          </td>  
+        
+        <td>
+          <img src="/iconos/host-record-svgrepo-com.svg" alt="">
+          <h3>Conocimiento en Bases de Datos </h3>
+          <p>¿Necesitas un paquete de aplicaciones específico o de repente surgió la necesidad de cambiar de sistema operativo? Contactame y lo arreglamos.</p>
+          <!-- <button class="mas-info">Mas info</button>-->    
+        </td>
+    </tr>
+
+    </table>
+
+  </section>
+
+</div>
+
+<section class="element-aparecer2">
+  <h2 class="sobre-mi" id="portafolio">Proyectos Web</h2>
+    
+  <div class="container-card">
+	
+    <div class="card">
+      <figure>
+        <img src="/images/proyectos/medicos.png">
+      </figure>
+      <div class="contenido-card">
+        <h3>Medical Capital</h3>
+        <p>Pagina Web orientada a los servicios médicos, brindados por la clinica Medical Capital. Pediatría, Ginecología, Dermatología, Cardiología. Cuenta con formulario para agendar consultas.</p>
+        <a href="#" class="verMasBtn1">Ver Más</a>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img src="/images/image1.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>Gestión de Redes</h3>
+        <p>Nosotros creamos y optimizamos tus perfiles en las Redes Sociales. Importantes para que tu presencia online sea completa.</p>
+        <a href="#" class="verMasBtn2">Ver Más</a>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img src="https://image.freepik.com/foto-gratis/desarrollo-programadores-desarrollo-tecnologias-diseno-codificacion-sitios-web_18497-1090.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>Desarrollo Web</h3>
+        <p>Creamos tu página web utilizando las últimas tecnologías disponibles. Una Web adaptativa a tu móvil o Tablet y con un gestor de contenido fácil.</p>
+        <a href="#" class="verMasBtn3">Ver Más</a>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ9DMNFHxwZcfPXJrJeBMITxPMP3FMZk_ixXzTfzt4G_C-G058">
+      </figure>
+      <div class="contenido-card">
+        <h3>Proximamente...</h3>
+        <p>Podemos crear la identidad corporativa de tu empresa. Diseño , Maquetación de folletos, Catálogos, Papelería y mucho más.</p>
+        <a href="#">Ver Más</a>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img src="/images/image1.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>Proximamente...</h3>
+        <p>Nosotros creamos y optimizamos tus perfiles en las Redes Sociales. Importantes para que tu presencia online sea completa.</p>
+        <a href="#">Ver Más</a>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img src="https://image.freepik.com/foto-gratis/desarrollo-programadores-desarrollo-tecnologias-diseno-codificacion-sitios-web_18497-1090.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>Proximamente...</h3>
+        <p>Creamos tu página web utilizando las últimas tecnologías disponibles. Una Web adaptativa a tu móvil o Tablet y con un gestor de contenido fácil.</p>
+        <a href="#" >Ver Más</a>
+      </div>
+    </div>
+    </div>
+
+
+<!-- Proyecto Web - 1ero -->
+
+
+<section class="modal1">
+    <div class="modal-contenedor">
+      <a href="#" class="fa-solid fa-circle-xmark x"></a>
+        <h3 class="modal-titulo">Medical Capital</h3>
+        <p class="modal-parrafo">Pagina Web orientada a los servicios médicos, brindados por la clinica Medical Capital. Pediatría, Ginecología, Dermatología, Cardiología. Cuenta con formulario para agendar consultas.</p>
+        <p> <strong>Stack:</strong> Html, Css, Js,  MySql, Php</p>
+        <p>
+          <strong>Repositorio:</strong>
+          <a href="https://github.com/MauriYedro64/Medical_Proyect" target="_blank">
+            <i class="fa-brands fa-github fa-2xl icon"></i>
+          </a>
+        </p>
+        <p> <strong>Web:</strong> <i class="fa-solid fa-earth-americas fa-2xl icon"></i></p>
+        <a href="#" class="modal-cerrar1"> 🡐 Atras</a>
+    </div>
+</section>
+
+
+ <!-- Proyecto Web - 2do -->
+<section class="modal2">
+ <div class="modal-contenedor">
+  <a href="#" class="fa-solid fa-circle-xmark x2"></a>
+     <h3 class="modal-titulo">Nombre Pagina Web 2</h3>
+     <p class="modal-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi, perferendis repellendus dicta labore nobis eveniet reiciendis laudantium. Eaque cumque neque dignissimos deserunt sapiente dolorum.</p>
+     <p> <strong>Stack:</strong> Html, Css, Js</p>
+     <p> <strong>Repositorio:</strong> <i class="fa-brands fa-github fa-2xl icon"></i></p>
+     <p> <strong>Web:</strong> <i class="fa-solid fa-earth-americas fa-2xl icon"></i></p>
+     <a href="#" class="modal-cerrar2">🡐 Atras</a>
+ </div>
+</section>    
+
+  <!-- Proyecto Web - 3ero -->
+  <section class="modal3">
+    <div class="modal-contenedor">
+      <a href="#" class="fa-solid fa-circle-xmark x3"></a>
+        <h3 class="modal-titulo">Nombre Pagina Web 3</h3>
+        <p class="modal-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi, perferendis repellendus dicta labore nobis eveniet reiciendis laudantium. Eaque cumque neque dignissimos deserunt sapiente dolorum.</p>
+        <p> <strong>Stack:</strong> Html, Css, Js</p>
+        <p> <strong>Repositorio:</strong> <i class="fa-brands fa-github fa-2xl icon"></i></p>
+        <p> <strong>Web:</strong> <i class="fa-solid fa-earth-americas fa-2xl icon"></i></p>
+        <a href="#" class="modal-cerrar3">🡐 Atras</a>
+    </div>
+</section> 
+
+
+
+
+<div class="color-fondo">
+<h2 class="sobre-mi3" id="contact">Contacto</h2>
+
+
+
+  <section class="form-contenedor" >
+    <h3>Contactame</h3>
+    <br>
+    <div class="form-contenido">
+        <div class="info">
+
+            <div class="col">
+                <i class="icono fas fa-map-marker-alt"></i>
+                <p>Corrientes Capital - Argentina</p>
+            </div>
+
+            <div class="col">
+                <i class="icono fas fa-envelope"></i>
+                <p>yedromauricio86@gmail.com</p>
+            </div>
+
+            <div class="col">
+                <i class="icono fas fa-phone"></i>
+                <p>(+54) 379 5041392</p>
+            </div>
+
+            <div class="redes-s">
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </div>
+
+        <form action="https://formspree.io/f/mjvnkdve" method="POST" class="formulario">
+
+          <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+          <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
+          <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+          <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+          <button type="button" onclick="validarFormulario()" >Enviar</button>
+
+
+      </form>
+    </div>
+</section>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/JS/app.js"></script>
+
+  <footer>
+    <div class="icons">
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <br>
+    <p>&copy; 2023 | Desarrollado por Yedro Mauricio</p>
+  </footer>
+
+  <!-- Script de scroll-vanish -->
+  <script src="/JS/scroll-vanish.js"></script>
+  <!-- MODAL DE REDES SOCIALES-->
+  <script src="/JS/main.js"></script>
+  <!-- MODAL DE PROYECTOS-->
+  <script src="/JS/modal2.js"></script>
+
+  <?php
+    include("send.php");
+  ?>
+
+  <script>
+      function myFunction(){
+        window.location.href="http://localhost/pagina"
+      }
+  </script>
+
+
+
+
+<!-- Scipt para descargar PDF boton de Sobre Mi -->
+<script>
+  function descargarPDF() {
+      // Crear un enlace temporal
+      var enlace = document.createElement('a');
+
+      // Establecer el enlace a tu archivo PDF
+      enlace.href = 'Documento/Horario.pdf';  // Reemplaza 'ruta/al/archivo.pdf' con la ruta correcta de tu archivo PDF
+
+      // Establecer el atributo de descarga y el nombre del archivo
+      enlace.download = 'nombre-del-archivo.pdf';  // Puedes cambiar 'nombre-del-archivo.pdf' según tus preferencias
+
+      // Agregar el enlace al cuerpo del documento
+      document.body.appendChild(enlace);
+
+      // Simular un clic en el enlace para iniciar la descarga
+      enlace.click();
+
+      // Eliminar el enlace después de la descarga
+      document.body.removeChild(enlace);
+  }
+</script>
+
+
+
+</body>
+</html>
+

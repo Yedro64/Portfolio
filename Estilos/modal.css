@@ -1,0 +1,102 @@
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s;
+    --transform: translateY(-100vh);
+    --transition: transform .5s;
+    z-index: 1000; /* Ajustar valor según sea necesario, para que sea mayor que otros elementos en la página */
+}
+
+.modal-show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .4s;
+    --transform: translateY(0);
+}
+
+.modal-conteiner{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: transform .3s;
+    transition: var(--transition);
+}
+
+.modal-title{
+    font-family:cursive;
+    font-size: 2.0em;
+}
+
+
+.modal-img{
+    width: 80%;
+    max-width: 300px;
+}
+
+.close-icon{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ea3a3a;
+    margin-top: -50px;
+    margin-left: 355px;
+}
+.close-icon:hover{
+    filter: brightness(80%);
+}
+
+.modal-cerrar{
+    margin: auto;
+    text-decoration: none;
+    color: #222222;
+    background-color: #63636367;
+    padding: 0.8em 2em;
+   /* border: 1px solid; */
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 400;
+    transition: background-color .3s;
+    margin-top: 25px;
+}
+
+.modal-cerrar:hover{
+    filter: brightness(80%);
+}
+
+.boton-modal-red{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+      background-color: #3498db;
+      width: 70%;
+      height: 40px;
+    padding: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    border: none;
+    padding: auto 22px; /* Ajusta el espacio interno según tus preferencias */
+  font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+.boton-modal-red:hover {
+    background-color: #246d9e;/* Cambia el color de fondo al hacer hover */
+    color: #fff; /* Cambia el color del texto al hacer hover */
+  }

@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    /*background-color: rgb(209, 209, 209);*/
+    background-color: rgb(200, 200, 200);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;  
+  }
+  
+  header {
+    width: 100%;
+    /*background-color: #353535;*/
+    /*background-color: #333;*/
+    background-color: #1c1c1c;;
+    transition: background-color 0.3s ease; 
+   /*background-position: center;
+   background-size: cover;*/
+   /*backdrop-filter: blur(20px);*/
+   color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*adding: 2px;*/
+  
+    height: 80px; /* Ajusta la altura según tus preferencias */
+    /*padding: 0 20px; /* Ajusta el espaciado interno según tus preferencias */
+
+    /*Para mantener el header fijo*/
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+  }
+  
+
+  .logo img {
+    /*margin-top: -40px;*/
+    max-width: 200px;
+    margin-left: 60px;
+  }
+  
+  nav ul {
+    
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  nav li {
+    transform: translateX(-35px);
+    padding-right: 50px;
+  }
+  
+  nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega una transición a background-color y transform */
+  }
+
+  nav ul li a:hover {
+    color: #bb9900;
+ 
+    transition: all 0.3s;
+    transition: color 0.3s;
+  }
+
+  .info-personal{
+    margin-top: 120px;
+  }
+  .contenido-info {
+   width: 100%;
+   height: 810px;
+    transform: translateY(80px); /*Para bajar mas el contenido*/
+    align-items: center;
+    
+    justify-content: center;
+    text-align: center;
+    /*background: linear-gradient(to bottom, #ffffff, #e1e1e1, #9c9c9c);*/
+    background-color: #1c1c1c;
+    margin: auto;
+   /* align-items: center;
+    justify-content: space-around;*/
+    
+}
+
+
+  .contenido-info p {
+    font-size: 20px;
+    margin-top: 18px; /* Agrega un espacio entre los títulos y el párrafo siguiente */
+  }
+  
+  .contenido-info li{
+    font-size: 17px;
+    margin-left: 10px;
+    transform: translateY(10px);
+  }
+
+
+  .contenido-info img {
+    
+    max-width: 240px;
+    margin-top: 15px; /* Agrega un espacio entre el párrafo y la imagen */
+  }
+
+
+/*INFORMACION PERSONAL*/
+.contenido-info h2{
+  
+  font-size: 35px;
+  margin-top: 20px;
+  color: #dcdcdc;
+}
+.contenido-info h3{
+  color: #909090;
+}
+
+.table-info{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenido h3{
+  color: #585858;
+}
+
+.table-info{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Estilos para el botón de redes sociales */
+.redesBtn {
+  margin-top: 10px;
+  background-color: #4285f4; /* Color de fondo azul */
+  color: #fff; /* Color del texto blanco */
+  padding: 12px 22px; /* Ajusta el espacio interno según tus preferencias */
+  font-size: 15px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Ajusta el redondeo de las esquinas según tus preferencias */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Añade transiciones suaves al color de fondo y texto al hacer hover */
+  
+}
+
+.redesBtn:hover {
+  background-color: #185bc5;/* Cambia el color de fondo al hacer hover */
+  color: #fff; /* Cambia el color del texto al hacer hover */
+  
+}
+
+/* Boton para descargar CV */
+.cvBtn {
+  margin-left: 5px;
+  margin-top: 20px;
+  background-color: #4285f4; /* Color de fondo azul */
+  color: #fff; /* Color del texto blanco */
+  padding: 12px 22px; /* Ajusta el espacio interno según tus preferencias */
+  font-size: 15px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Ajusta el redondeo de las esquinas según tus preferencias */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Añade transiciones suaves al color de fondo y texto al hacer hover */
+  
+}
+
+.cvBtn:hover {
+  background-color: #185bc5;/* Cambia el color de fondo al hacer hover */
+  color: #fff; /* Cambia el color del texto al hacer hover */
+}
+
+
+/*AVATAR*/
+  .avatar {
+    background-color: #fff;
+    border-radius: 5%;
+    max-width: 200px;
+    width: 200px;
+    border: 4px solid #919191;  
+    transform: translateY(100px);
+  }
+  
+  #redesDropdown {
+    display: none;
+  }
+  
+
+  /* SLIDER LOGOS */
+.logos-contenido{
+  width: 88vw;
+  margin: auto;
+  transform: translateY(120px);
+}
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: rgb(200, 200, 200);
+    white-space: nowrap;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(205, 205, 205, 0), rgb(225, 225, 225));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(225, 225, 225));
+  }
+  
+  /*.logos:hover .logos-slide {
+    animation-play-state: paused;
+  }*/
+.log1:hover {
+    transition: transform 0.3s ease; /* Agrega una transición suave al logo */
+  transform: scale(1.2); /* Escala el logo al doble de su tamaño original al pasar el ratón */
+  }
+  .log2:hover {
+    transition: transform 0.3s ease; /* Agrega una transición suave al logo */
+  transform: scale(1.2); /* Escala el logo al doble de su tamaño original al pasar el ratón */
+  }
+  .log3:hover {
+    transition: transform 0.3s ease; /* Agrega una transición suave al logo */
+  transform: scale(1.2); /* Escala el logo al doble de su tamaño original al pasar el ratón */
+  }
+  .log4:hover {
+    transition: transform 0.3s ease; /* Agrega una transición suave al logo */
+  transform: scale(1.2); /* Escala el logo al doble de su tamaño original al pasar el ratón */
+  }
+  .log5:hover {
+    transition: transform 0.3s ease; /* Agrega una transición suave al logo */
+  transform: scale(1.2); /* Escala el logo al doble de su tamaño original al pasar el ratón */
+  }
+  .log6:hover {
+    transition: transform 0.3s ease; /* Agrega una transición suave al logo */
+  transform: scale(1.2); /* Escala el logo al doble de su tamaño original al pasar el ratón */
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 60s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 55px;
+    margin: 0 40px;
+  }
+
+
+  
+  /* FOOTER */
+
+
+  footer {
+    margin-top: 0px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+   
+    
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+      background-color: #4285f4;
+      width: 99%;
+    padding: 7px;
+    
+  }
+
+  .icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .icons a:hover {
+    color: #ffcc00;
+  }
+

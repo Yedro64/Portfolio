@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Rubik&display=swap');
+
+
+.element-aparecer{
+    opacity: 0;
+    transform: translateY(20px); /* O cualquier transformación deseada */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Agrega una transición suave */
+}
+.element-aparecer.aparecer{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sobre-mi2{
+    margin-top: 162px; 
+   /* margin-bottom: 10px; /* Ajusta el margen inferior según tus preferencias */
+    /*width:  90%;*/
+    font-size: 28px;
+    margin-left: 680px;
+    color: rgb(104, 104, 104);
+    transform: translateY(40px);
+}
+
+
+
+.color-fondo1{
+    width: 100%;
+    height: 760px;
+    background-color: #ffffff;
+}
+
+.tabla-servicios{
+    display: flex;
+    margin-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 120px;
+    /*box-shadow: 0 1px 6px rgba(179, 179, 179, 0.993);*/
+    
+    border-collapse: separate;
+    border-spacing:  45px;
+   
+    background-color: #ffffff;
+
+    
+}
+
+.tabla-servicios h3{
+    margin-left: -40px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.tabla-servicios p{
+    margin-top: 10px;
+    text-align: center;
+   letter-spacing: -0.001em;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    word-spacing: 1.5;
+    margin-right: 40px;
+}
+
+.tabla-servicios td{
+    padding-inline: -1px; /*Lo que hizo separar bien los textos*/
+    width: 600px;
+    
+    font-size: 18px;
+  /*  border: 1px solid #909090; /* Añade un borde para que sea más visible */
+  background-color: #ffffff;
+  border-radius: 8px;
+  /*transform: translate(10px, 20px);*/
+    vertical-align: top; /* Alinea el texto h3 en la parte superior del td */
+}
+
+
+/*.mas-info{
+    position: absolute;
+  color: #fff;
+  padding: 6px 12px; 
+  font-size: 15px; 
+  border: none; 
+  border-radius: 1px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.mas-info:hover {
+    background-color: #888888; 
+    color: #fff; 
+}*/
+
+.tabla-servicios img{
+    width: 110px; /* Tamaño de la imagen, ajusta según sea necesario */
+    margin-left: 101px; /* Espacio entre la imagen y el título */
+    transition: transform 0.2s ease-in-out;
+}
+
+.tabla-servicios img:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    
+ /*  transform: scale(1.1);*/
+}
