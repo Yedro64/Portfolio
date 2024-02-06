@@ -4,9 +4,11 @@
     
     display: flex;
     margin: auto;
+   justify-content: center;
+    align-items: center;
     width: 1350px;
     height: 70px;
- 
+    
   }
 
   .boton{

@@ -17,7 +17,8 @@
    /* margin-bottom: 10px; /* Ajusta el margen inferior según tus preferencias */
     /*width:  90%;*/
     font-size: 28px;
-    margin-left: 680px;
+
+    text-align: center;
     color: rgb(104, 104, 104);
     transform: translateY(40px);
 }
@@ -32,19 +33,23 @@
 
 .tabla-servicios{
     display: flex;
-    margin-right: 100px;
-    justify-content: space-between;
+    
+    justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    margin-top: 120px;
+    margin: auto;
+
+
+
+    padding-left: 30px;
+    margin-top: 110px;
     /*box-shadow: 0 1px 6px rgba(179, 179, 179, 0.993);*/
     
     border-collapse: separate;
-    border-spacing:  45px;
+    border-spacing:  50px;
    
     background-color: #ffffff;
 
-    
+
 }
 
 .tabla-servicios h3{
@@ -56,7 +61,8 @@
 .tabla-servicios p{
     margin-top: 10px;
     text-align: center;
-   letter-spacing: -0.001em;
+   
+    letter-spacing: -0.001em;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     word-spacing: 1.5;
@@ -65,8 +71,7 @@
 
 .tabla-servicios td{
     padding-inline: -1px; /*Lo que hizo separar bien los textos*/
-    width: 600px;
-    
+    max-width: 600px;
     font-size: 18px;
   /*  border: 1px solid #909090; /* Añade un borde para que sea más visible */
   background-color: #ffffff;
@@ -74,6 +79,8 @@
   /*transform: translate(10px, 20px);*/
     vertical-align: top; /* Alinea el texto h3 en la parte superior del td */
 }
+
+
 
 
 /*.mas-info{
@@ -89,18 +96,33 @@
 
 .mas-info:hover {
     background-color: #888888; 
-    color: #fff; 
+    color: #fff; s
 }*/
 
+
+
 .tabla-servicios img{
-    width: 110px; /* Tamaño de la imagen, ajusta según sea necesario */
-    margin-left: 101px; /* Espacio entre la imagen y el título */
+    max-width: 110px; /* Tamaño de la imagen, ajusta según sea necesario */
+   /* margin-left: 300px; /* Espacio entre la imagen y el título */
     transition: transform 0.2s ease-in-out;
+ /*  margin: auto;
+   align-items: center;
+   display: grid;
+   justify-content: space-around;
+   margin-left: 140px;*/
+
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   margin: auto;
+   
+   transform: translateX(-20px);
 }
 
 .tabla-servicios img:hover{
     cursor: pointer;
-    transform: translateY(-5px);
+ 
     
- /*  transform: scale(1.1);*/
+ 
 }

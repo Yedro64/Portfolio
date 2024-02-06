@@ -10,8 +10,12 @@
     margin-top: 220px; 
    /* margin-bottom: 10px; /* Ajusta el margen inferior según tus preferencias */
     /*width:  90%;*/
-    font-size: 28px;
-    margin-left: 695px; 
+    /* margin-bottom: 10px; /* Ajusta el margen inferior según tus preferencias */
+     /*width:  90%;*/
+     font-size: 28px;
+ 
+     text-align: center;
+
     color: rgb(104, 104, 104);
 	transform: translateY(40px);
 }
