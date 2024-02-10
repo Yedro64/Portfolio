@@ -59,10 +59,10 @@
 }
 
 .tabla-servicios p{
-    margin-top: 10px;
+    margin-top: 6px;
     text-align: center;
    
-    letter-spacing: -0.005em;
+    letter-spacing: 0.05em;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     word-spacing: 1.5;
