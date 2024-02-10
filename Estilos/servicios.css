@@ -62,11 +62,14 @@
     margin-top: 10px;
     text-align: center;
    
-    letter-spacing: -0.001em;
+    letter-spacing: -0.005em;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     word-spacing: 1.5;
     margin-right: 40px;
+
+    min-width: 360px;
+    max-width: 360px;
 }
 
 .tabla-servicios td{
@@ -102,7 +105,7 @@
 
 
 .tabla-servicios img{
-    max-width: 110px; /* Tamaño de la imagen, ajusta según sea necesario */
+    width: 110px; /* Tamaño de la imagen, ajusta según sea necesario */
    /* margin-left: 300px; /* Espacio entre la imagen y el título */
     transition: transform 0.2s ease-in-out;
  /*  margin: auto;
