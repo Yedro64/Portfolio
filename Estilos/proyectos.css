@@ -52,14 +52,22 @@
 }
 .card .contenido-card h3{
 	margin-bottom: 15px;
-	color: #7a7a7a;
+	/*color: #7a7a7a;*/
+	color: #303030;
+	font-size: 22px;
 }
+
+.card .contenido-card h4{
+	transform: translateY(-10px);
+	color: #7d7d7d;
+}
+
 .card .contenido-card p{
 	line-height: 1.5;
-	
-	color: #6a6a6a;
+	margin-top: 10px;
+	color: #525252;
 	font-size: 14px;
-	margin-bottom: 5px;
+	margin-bottom: -5px;
 }
 /*
 .card .contenido-card a{

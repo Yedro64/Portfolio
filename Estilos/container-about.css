@@ -36,7 +36,7 @@
 .container-about {
     
     transform: translateY(50px);
-    width: 1350px;
+    max-width: 1350px;
     margin: 0 auto;
   }
 .seccion-about {
@@ -45,6 +45,10 @@
     border: 1px solid #bbbbbb;  
     padding: 20px;
 }
+
+
+
+
 /*
 .seccion-about h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -82,9 +86,12 @@
 }
 
 .seccion2, .seccion3{
-    font-size: 20px;
+  font-size: 20px;
     text-align: left;
     font-family: 'Poppins', sans-serif;
+    width: 1350px;
+    height: 209px;
+    padding-bottom: 20px;
 }
 .seccion2 h2, .seccion3 h2{
     text-align: left;
