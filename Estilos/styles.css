@@ -1,10 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+
+  /*margin: 0;
+  padding: 0;*/
+  /*box-sizing: border-box;*/
 }
 
 body {
+  overflow-x: hidden;
     /*background-color: rgb(209, 209, 209);*/
     background-color: rgb(200, 200, 200);
     font-family: Arial, sans-serif;
@@ -217,6 +219,7 @@ body {
 
   /* SLIDER LOGOS */
 .logos-contenido{
+  
   width: 88vw;
   margin: auto;
   transform: translateY(120px);
@@ -232,6 +235,7 @@ body {
   }
   
   .logos {
+ 
     overflow: hidden;
     padding: 30px 0;
     background-color: rgb(200, 200, 200);
@@ -284,16 +288,19 @@ body {
   transform: scale(1.2); /* Escala el logo al doble de su tamaño original al pasar el ratón */
   }
   .log6:hover {
+    
     transition: transform 0.3s ease; /* Agrega una transición suave al logo */
   transform: scale(1.2); /* Escala el logo al doble de su tamaño original al pasar el ratón */
   }
   
   .logos-slide {
+    
     display: inline-block;
     animation: 60s slide infinite linear;
   }
   
   .logos-slide img {
+    
     height: 55px;
     margin: 0 40px;
   }
